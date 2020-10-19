@@ -1,0 +1,34 @@
+@use "@material/layout-grid/_index" as grid;
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+}
+
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+}
+
+.hide-on-phone {
+  @media (min-width: map-get(grid.$breakpoints, "phone")) and (max-width: map-get(grid.$breakpoints, "tablet")) {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+  @media (min-width: map-get(grid.$breakpoints, "tablet")) and (max-width: map-get(grid.$breakpoints, "desktop")) {
+    display: none !important;
+  }
+}
+
+.hide-on-desktop {
+  @media (min-width: map-get(grid.$breakpoints, "desktop")) {
+    display: none !important;
+  }
+}

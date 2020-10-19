@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard-web
+  labels:
+    control-plane: dashboard-web
+    role: frontend
+spec:
+  selector:
+    matchLabels:
+      control-plane: dashboard-web
+      role: frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        control-plane: dashboard-web
+        role: frontend
+    spec:
+      containers:
+        - image: web:latest
+          name: dashboard-web
+          imagePullPolicy: Always
+          env:
+            - name: API_BASE
+              value: http://dashboard-api:8000

@@ -1,0 +1,47 @@
+.component-toggle {
+  &__close {
+    position: absolute;
+    top: calc(-64px -16px);
+    right: 16px;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: calc(-64px -16px);
+    right: 16px;
+  }
+
+  &.component-toggle--front {
+    & > .component-toggle__front {
+      display: block;
+    }
+
+    & > .component-toggle__back {
+      display: none;
+    }
+
+    & > .component-toggle__close {
+      display: none;
+    }
+
+    & > .component-toggle__toggle {
+      display: block;
+    }
+  }
+
+  & > .component-toggle__front {
+    display: none;
+  }
+
+  & > .component-toggle__back {
+    display: block;
+  }
+
+  & > .component-toggle__close {
+    display: block;
+  }
+
+  & > .component-toggle__toggle {
+    display: none;
+  }
+}

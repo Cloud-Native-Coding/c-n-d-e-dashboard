@@ -1,0 +1,23 @@
+.cnc-detail-page {
+  &--front {
+    .cnc-detail-page__back {
+      display: none;
+    }
+  }
+
+  &--back {
+    .cnc-detail-page__front {
+      display: none;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__actions {
+    display: flex;
+  }
+}

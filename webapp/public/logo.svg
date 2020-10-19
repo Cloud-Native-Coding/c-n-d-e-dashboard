@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="32px" viewBox="0 0 52 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3 Copy 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CNC-Start-NEU" transform="translate(-170.000000, -33.000000)">
+            <g id="Group-3-Copy-2" transform="translate(196.000000, 49.000000) scale(-1, 1) translate(-196.000000, -49.000000) translate(170.000000, 33.000000)">
+                <path d="M26,32 L26,12 L42,12 C47.5228475,12 52,16.4771525 52,22 C52,27.5228475 47.5228475,32 42,32 L42,32 L26,32 Z" id="Combined-Shape" fill="#EF6262"></path>
+                <rect id="Rectangle-Copy-8" fill="#EF3732" x="10" y="16" width="16" height="16"></rect>
+                <circle id="Oval-Copy-19" fill="#EF3732" cx="26" cy="16" r="16"></circle>
+                <circle id="Oval-Copy-18" fill="#B30500" cx="10" cy="22" r="10"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

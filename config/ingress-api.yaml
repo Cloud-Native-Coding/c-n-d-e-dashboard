@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  name: dashboard-api
+spec:
+  rules:
+  - host: api.my-domain.com
+    http:
+      paths:
+      - backend:
+          serviceName: dashboard-api
+          servicePort: 8000
+        path: /
+  tls:
+  - hosts:
+    - api.my-domain.com
+    secretName: dashboard-api-tls

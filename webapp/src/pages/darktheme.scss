@@ -1,0 +1,75 @@
+@use "./colors";
+
+@use "@material/theme" with (
+  $primary: colors.$primary-dark,
+  $secondary: colors.$secondary-dark,
+  $on-primary: colors.$text-on-primary,
+  $on-secondary: colors.$text-on-secondary,
+  $background: colors.$background,
+  $surface: colors.$surface-1,
+  $on-surface: #ffffff
+);
+
+@use "@material/typography" with (
+  $font-family: unquote("Nunito, Helvetica, sans-serif")
+);
+
+@use "@material/typography/mdc-typography";
+@use "@material/button/mdc-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/top-app-bar/_index" as bar;
+@use "@material/icon-button/mdc-icon-button";
+@use "@material/drawer/mdc-drawer";
+@use "@material/list/mdc-list";
+@use "@material/list/mixins" as list;
+@use "@material/fab/mdc-fab";
+@use "@material/card/mdc-card";
+@use "@material/dialog/mdc-dialog";
+@use "@material/textfield/mdc-text-field";
+@use "@material/elevation/mdc-elevation";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/layout-grid/mdc-layout-grid";
+@use "@material/switch/mdc-switch";
+@use "@material/select/mdc-select";
+
+.cnde-drawer {
+  position: fixed;
+}
+
+.cnde-app-bar {
+  @include bar.fill-color-accessible(colors.$surface-1);
+  @include bar.icon-ink-color(white);
+  position: relative;
+}
+
+.cnde-nav-item {
+  display: flex;
+  justify-content: center;
+
+  & > .mdc-list-item__text {
+    text-align: center;
+  }
+
+  & > .mdc-list-item__graphic {
+    margin: 0;
+  }
+}
+
+@include list.single-line-shape-radius(8%);
+
+.cnde-drawer-header {
+  text-align: center;
+  margin: 20px 0;
+
+  & i {
+    margin-top: 20px;
+    font-size: 80px;
+  }
+}
+
+body {
+  background-color: colors.$background;
+  color: white;
+}
+

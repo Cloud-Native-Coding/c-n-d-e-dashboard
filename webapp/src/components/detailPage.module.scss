@@ -1,0 +1,17 @@
+.showFront > .backPage {
+  display: none;
+}
+
+.showBack > .frontPage {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+}

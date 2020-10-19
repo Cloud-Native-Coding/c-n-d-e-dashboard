@@ -1,0 +1,43 @@
+{
+  "name": "cnde-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "format": "prettier --write 'src/**/*.js'",
+    "lint": "eslint 'src/**/*.js'"
+  },
+  "dependencies": {
+    "@material/button": "^5.1.0",
+    "@material/card": "^5.1.0",
+    "@material/dialog": "^5.1.0",
+    "@material/drawer": "^5.1.0",
+    "@material/elevation": "^5.1.0",
+    "@material/fab": "^5.1.0",
+    "@material/icon-button": "^5.1.0",
+    "@material/layout-grid": "^5.1.0",
+    "@material/list": "^5.1.0",
+    "@material/menu": "^5.1.0",
+    "@material/menu-surface": "^5.1.0",
+    "@material/select": "^5.1.0",
+    "@material/switch": "^5.1.0",
+    "@material/textfield": "^5.1.0",
+    "@material/theme": "^5.1.0",
+    "@material/top-app-bar": "^5.1.0",
+    "@material/typography": "^5.1.0",
+    "highlight.js": "^9.18.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.4.4",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "prettier": "1.19.1"
+  }
+}

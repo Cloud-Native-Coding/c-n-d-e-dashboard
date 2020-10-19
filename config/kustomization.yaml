@@ -1,0 +1,38 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# this namespace is also part of an Ingress Annotation
+namespace: cnde-system
+
+bases:
+  - postgresql
+
+resources:
+  - cnde-rest-api.yaml
+  - cnde-web-app.yaml
+  - services.yaml
+  - ingress-web.yaml
+  - ingress-api.yaml
+  - oauth-proxy.yaml
+
+images:
+  - name: controller
+    newName: eu.gcr.io/cloud-native-coding/cnde-rest-api
+    newTag: latest
+  - name: web
+    newName: eu.gcr.io/cloud-native-coding/cnde-web-app
+    newTag: latest
+
+secretGenerator:
+  - name: cnde-web-oauth-proxy
+    env: oauth2-proxy.properties
+  - name: postgresql-pw
+    literals:
+      - postgres-password=1929384756
+
+configMapGenerator:
+  - name: postgresql-env
+    env: postgres.properties
+
+generatorOptions:
+  disableNameSuffixHash: true
