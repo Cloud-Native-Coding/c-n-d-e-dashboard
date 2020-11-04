@@ -1,4 +1,4 @@
-# c-n-d-e Dashbaord
+# c-n-d-e Dashboard
 
 This is the Dashboard repository for Cloud Native Coding. It provides a configuration dashboard for clusters and their running IDEs.
 
@@ -6,8 +6,8 @@ For more information refer to [Cloud Native Coding](https://cloud-native-coding.
 
 Components of this Dashboard:
 
-- Restul API (restapi)
-- Webapplication for IDE management (webapp)
+- Restful API (rest-api)
+- Web-application for IDE management (webapp)
 - PostgreSQL for persistence
 
 ## IDEs for users
